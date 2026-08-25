@@ -1,7 +1,11 @@
 variable "aws_region" {
-  type = string
+  description = "AWS region in which to create the EKS cluster."
+  type        = string
+  default     = "ap-south-1"
 }
 
 variable "cluster_name" {
-  type = string
+  description = "Name of the EKS cluster."
+  type        = string
+  default     = "Pathnex-Aug-2026"
 }
