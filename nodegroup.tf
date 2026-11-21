@@ -9,7 +9,7 @@ resource "aws_eks_node_group" "pathnex-NG" {
   version        = local.kubernetes_version
   ami_type       = "AL2023_x86_64_STANDARD"
   capacity_type  = "SPOT"
-  instance_types = ["c7i-flex.large"]
+  instance_types = ["t3.small"]
   disk_size      = 20
 
   scaling_config {
